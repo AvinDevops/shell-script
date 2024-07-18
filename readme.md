@@ -1,5 +1,5 @@
-** steps to create githun repo: **
-1.create repo in github.
-2.clone the http link to local desktop location.
-3.start developing.
-4.Add to temp area.
+**steps to create githun repo:**
+* create repo in github.
+* clone the http link to local desktop location.
+* start developing.
+* Add to temp area.
