@@ -3,3 +3,4 @@
 * clone the http link to local desktop location.
 * start developing.
 * Add to temp area.
+* commit to local desktop
