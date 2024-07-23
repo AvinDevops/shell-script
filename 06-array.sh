@@ -1,6 +1,6 @@
 #!/bin/bash
 
-MOVIES = ("Civil War" "Infinity War" "End Game")
+MOVIES=("Civil War" "Infinity War" "End Game")
 # list always starts with index zero (0)
 #size of above array is 3
 #index are 0,1,2
