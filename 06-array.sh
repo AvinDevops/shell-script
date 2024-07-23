@@ -8,4 +8,4 @@ MOVIES=("Civil War" "Infinity War" "End Game")
 echo "First Movie is : ${MOVIES[0]}"
 echo "Second Movie is : ${MOVIES[1]}"
 echo "Third Movie is : ${Movies[2]}"
-echo "Show all : ${Movies[@]}"
+
