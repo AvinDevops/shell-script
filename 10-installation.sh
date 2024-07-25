@@ -10,3 +10,5 @@ else
 fi
 
 dnf install mysqll -y
+
+echo "Is scripting executing...!"
