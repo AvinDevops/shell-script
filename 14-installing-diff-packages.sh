@@ -31,7 +31,7 @@ for i in $@
 do
     echo "package to install : $i"
     dnf list installed $i &>>$LOGFILE
-    if [ $? -ne 0 ]
+    if [ $? -eq 0 ]
     then
         echo -e "$G $i already installed $N...$Y SKIPPING $N"
         exit 1
