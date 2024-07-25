@@ -34,7 +34,6 @@ do
     if [ $? -eq 0 ]
     then
         echo -e "$G $i already installed $N...$Y SKIPPING $N"
-        exit 1
     else
         dnf install $i -y &>>$LOGFILE
         VALIDATE $? "Installing $i"
