@@ -19,4 +19,6 @@ else
     echo "Installation of mysql...SUCCESS"
 fi
 
+dnf install git -y
+
 echo "Is scripting executing...!"
