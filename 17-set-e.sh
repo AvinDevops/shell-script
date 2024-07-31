@@ -7,7 +7,7 @@ N="\e[0m"
 set -e
 
 error_handler(){
-    echo "error came at $R $1:$2 $N"
+    echo "$R error came at  $1:$2 $N"
 }
 
 trap 'error_handler ${LINENO} "$BASH_COMMAND"' ERR
