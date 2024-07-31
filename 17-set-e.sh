@@ -2,6 +2,12 @@
 
 set -e
 
+error_handler(){
+    echo "error came at $1:$2"
+}
+
+trap 'error_handler "$lineno" "$BASH_COMMAND"'ERR
+
 USERID=$(id -u)
 
 if [ $USERID -ne 0 ]
