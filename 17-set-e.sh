@@ -7,7 +7,7 @@ N="\e[0m"
 set -e
 
 error_handler(){
-    echo "error came at  $1:$2"
+    echo -e "error came at $R $1:$2 $N"
 }
 
 trap 'error_handler ${LINENO} "$BASH_COMMAND"' ERR
@@ -19,10 +19,10 @@ then
     echo -e "$R please run this script with root access $N"
     #exit 1
 else
-    echo "$G you are super user $N"
+    echo -e "$G you are super user $N"
 fi
 
-dnf install mysqll -y
+dnf install mysql -y
 
 dnf install git -y
 
