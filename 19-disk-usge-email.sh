@@ -13,6 +13,8 @@ do
     if [ $USEAGE -ge $DISK_THRESHOLD ]
     then
         MESSAGE="$Y $FOLDER $N useage is more than $R $DISK_THRESHOLD $N, current useage:$G $USEAGE $N"
-        echo -e $MESSAGE
+        
     fi
 done <<< $DISK_USEAGE
+
+echo -e $MESSAGE
