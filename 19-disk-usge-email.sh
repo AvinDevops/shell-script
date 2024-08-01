@@ -19,6 +19,6 @@ do
     fi
 done <<< $DISK_USEAGE
 
-echo  $MESSAGE
+echo -e $MESSAGE
 
 # echo "$MESSAGE" | mail -s "DISK USEAGE INFO" avinashbandela25@gmail.com
