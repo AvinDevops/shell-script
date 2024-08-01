@@ -14,11 +14,11 @@ do
     FOLDER=$(echo $line | awk -F " " '{print $NF}')
     if [ $USEAGE -ge $DISK_THRESHOLD ]
     then
-        MESSAGE+="$Y $FOLDER $N useage is more than $R $DISK_THRESHOLD $N, current useage:$G $USEAGE $N \n"
+        MESSAGE+="$FOLDER useage is more than $DISK_THRESHOLD, current useage:$USEAGE \n"
         
     fi
 done <<< $DISK_USEAGE
 
-echo -e $MESSAGE
+echo  $MESSAGE
 
-echo -e "$MESSAGE" | mail -s "DISK USEAGE INFO" avinashbandela25@gmail.com
+echo "$MESSAGE" | mail -s "DISK USEAGE INFO" avinashbandela25@gmail.com
