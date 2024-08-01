@@ -21,4 +21,4 @@ done <<< $DISK_USEAGE
 
 echo -e $MESSAGE
 
-echo "$MESSAGE" | mail -s "DISK USEAGE INFO" avinashbandela25@gmail.com
+echo -e "$MESSAGE" | mail -s "DISK USEAGE INFO" avinashbandela25@gmail.com
