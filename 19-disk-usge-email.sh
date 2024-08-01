@@ -1,3 +1,5 @@
+#!/bin/bash
+
 DISK_USEAGE=$(df -hT | grep xfs)
 DISK_THRESHOLD=7
 
@@ -18,3 +20,5 @@ do
 done <<< $DISK_USEAGE
 
 echo -e $MESSAGE
+
+echo "$MESSAGE" | mail -s "DISK USEAGE INFO" avinashbandela25@gmail.com
