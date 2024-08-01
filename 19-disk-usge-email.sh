@@ -2,6 +2,7 @@
 
 DISK_USEAGE=$(df -hT | grep xfs)
 DISK_THRESHOLD=7
+MESSAGE=""
 
 R="\e[31m"
 G="\e[32m"
