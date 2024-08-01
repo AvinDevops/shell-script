@@ -2,7 +2,7 @@
 
 DISK_USEAGE=$(df -hT | grep xfs)
 DISK_THRESHOLD=7
-MESSAGE=" "
+MESSAGE=""
 
 R="\e[31m"
 G="\e[32m"
@@ -15,7 +15,7 @@ do
     FOLDER=$(echo $line | awk -F " " '{print $NF}')
     if [ $USEAGE -ge $DISK_THRESHOLD ]
     then
-        MESSAGE+="$FOLDER useage is more than $DISK_THRESHOLD, current useage:$USEAGE \n"
+        MESSAGE+="$FOLDER useage is more than $DISK_THRESHOLD, current useage:$USEAGE\n"
         
     fi
 done <<< $DISK_USEAGE
